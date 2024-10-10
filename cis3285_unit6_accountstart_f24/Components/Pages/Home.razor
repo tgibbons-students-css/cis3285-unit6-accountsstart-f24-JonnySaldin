@@ -80,6 +80,7 @@
         accountBalance = acctService.GetAccountBalance(selectedAccountName);
         strAccountBalance = accountBalance.ToString();
         StateHasChanged();
+        strDepositAmount = "";
     }
 
     private void btnWithdraw_Click()

@@ -44,6 +44,12 @@ namespace Domain
             Balance += amount;
         }
 
+        public void RemoveTransaction(decimal amount)
+        {
+            //RewardPoints += CalculateRewardPoints(amount);
+            Balance -= amount;
+        }
+
         public abstract int CalculateRewardPoints(decimal amount);
     }
 }
